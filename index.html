@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Interactiva - Arrastrar y Soltar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Actividad Interactiva - Seres Vivos</h1>
+        <p class="autor">Proyecto educativo con función de scroll automático.</p>
+    </header>
+
+    <div id="evidencia">
+        <h2 class="subtitulo">Clasifica los Elementos en los Contenedores Correspondientes</h2>
+
+        <!-- Área de elementos arrastrables -->
+        <div class="pool">
+            <div class="text-card biological draggable" draggable="true" id="irritabilidad">Irritabilidad</div>
+            <div class="text-card biological draggable" draggable="true" id="reproduccion">Reproducción</div>
+            <div class="text-card biological draggable" draggable="true" id="adaptacion">Adaptación</div>
+            <div class="text-card biological draggable" draggable="true" id="metabolismo">Metabolismo</div>
+            <div class="text-card biological draggable" draggable="true" id="homeostasis">Homeostasis</div>
+            <div class="text-card biological draggable" draggable="true" id="organizacioncelular">Organización Celular</div>
+            <div class="text-card category draggable" draggable="true" id="servivo1">Ser Vivo</div>
+            <div class="text-card category draggable" draggable="true" id="servivo2">Ser Vivo</div>
+            <div class="text-card category draggable" draggable="true" id="servivo3">Ser Vivo</div>
+            <div class="text-card category draggable" draggable="true" id="sinvida1">Sin Vida</div>
+            <div class="text-card category draggable" draggable="true" id="sinvida2">Sin Vida</div>
+        </div>
+
+        <!-- Contenedores de destino con imágenes -->
+        <div class="container">
+            <div class="main-box" id="lumitas">
+                <img src="lumitas.png" class="entity-image" alt="Lumitas">
+                <h3 class="contenedor-titulo">Lumitas</h3>
+                <div class="drop-area" data-category="lumitas"></div>
+            </div>
+            <div class="main-box" id="numidas">
+                <img src="numidas.png" class="entity-image" alt="Númidas">
+                <h3 class="contenedor-titulo">Númidas</h3>
+                <div class="drop-area" data-category="numidas"></div>
+            </div>
+            <div class="main-box" id="estelvinas">
+                <img src="estelvinas.png" class="entity-image" alt="Estelvinas">
+                <h3 class="contenedor-titulo">Estelvinas</h3>
+                <div class="drop-area" data-category="estelvinas"></div>
+            </div>
+            <div class="main-box" id="mirico">
+                <img src="mirico.png" class="entity-image" alt="Mírico">
+                <h3 class="contenedor-titulo">Mírico</h3>
+                <div class="drop-area" data-category="mirico"></div>
+            </div>
+            <div class="main-box" id="fluvitos">
+                <img src="fluvitos.png" class="entity-image" alt="Fluvitos">
+                <h3 class="contenedor-titulo">Fluvitos</h3>
+                <div class="drop-area" data-category="fluvitos"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones -->
+    <div class="buttons">
+        <button id="verifyBtn">Verificar</button>
+        <button id="retryBtn">Reintentar</button>
+        <button id="screenshotBtn">Capturar Pantalla</button>
+    </div>
+
+    <p id="feedback"></p>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
